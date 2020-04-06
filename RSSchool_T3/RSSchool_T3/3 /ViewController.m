@@ -113,7 +113,7 @@ int const COLTROL_HEIGHT = 30;
     
     self.buttonProcess = [[UIButton alloc] initWithFrame:CGRectMake(width / 2 - BUTTON_WIDTH / 2, y, BUTTON_WIDTH, COLTROL_HEIGHT)];
     [self.buttonProcess setTitle:@"Process" forState:UIControlStateNormal];
-    [self.buttonProcess setTitleColor:UIColor.systemBlueColor forState:UIControlStateNormal];
+    [self.buttonProcess setTitleColor:UIColor.blueColor forState:UIControlStateNormal];
     [self.buttonProcess addTarget:self action:@selector(processButtonDidTap:) forControlEvents:UIControlEventTouchUpInside];
     self.buttonProcess.accessibilityIdentifier = @"buttonProcess";
     [self.view addSubview: self.buttonProcess];
