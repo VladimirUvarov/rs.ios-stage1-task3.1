@@ -111,7 +111,8 @@ int const COLTROL_HEIGHT = 30;
     
     y = y + COLTROL_HEIGHT + BETWEEN_PADDING;
     
-    self.buttonProcess = [[UIButton alloc] initWithFrame:CGRectMake(width / 2 - BUTTON_WIDTH / 2, y, BUTTON_WIDTH, COLTROL_HEIGHT)];
+    int bwidth = (int) (width / 3);
+    self.buttonProcess = [[UIButton alloc] initWithFrame:CGRectMake(bwidth, y, width - 2 * bwidth, COLTROL_HEIGHT)];
     [self.buttonProcess setTitle:@"Process" forState:UIControlStateNormal];
     [self.buttonProcess setTitleColor:UIColor.blueColor forState:UIControlStateNormal];
     [self.buttonProcess addTarget:self action:@selector(processButtonDidTap:) forControlEvents:UIControlEventTouchUpInside];
